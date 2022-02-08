@@ -1,7 +1,3 @@
-
-
-
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -1398,5 +1394,23 @@ section {
   }
   #footer .credits {
     padding-top: 4px;
+  }
+}
+@media (max-width: 1440px) {
+  iframe {
+    max-width: 100%;
+    
+  }
+}
+@media (max-width: 767px) {
+  iframe {
+     max-width: 100%; 
+    width:100%
+  }
+}
+@media (max-width: 420px) {
+  iframe {
+    max-width: 100%;
+    width: 100%;
   }
 }
