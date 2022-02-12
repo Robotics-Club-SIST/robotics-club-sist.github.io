@@ -8,6 +8,18 @@
 
 This project is serves as a landing page site for Robotics Club @ Sathyabama IST.
 
+## Quick start
+
+- Fork this repo.
+- Rename the fork to YOURNAME.github.io in project settings to enable Github Pages.
+- Delete the CNAME file.
+
+At this point your new site should be up!
+
+- clone your fork to your local machine for development and testing purposes.
+
+To finish, go through config.yml and customize the name, description, etc.
+
 ## Contributing
 
 Anyone and everyone is welcome to contribute. Please see our [guidelines for contributing](CONTRIBUTING.md).
@@ -20,4 +32,4 @@ All contributors and participants in this repository are expected to abide by ou
 
 This project is licensed under [The MIT License](LICENSE).
 
-Copyright (c) 2022 Robotics Club SIST
+> You can check out the full license [here](LICENSE)
