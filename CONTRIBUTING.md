@@ -10,14 +10,33 @@ Please note we have a [Code of Conduct](CODE_OF_CONDUCT.md), please follow it in
 
 Contributions are made to this repo via Issues and Pull Requests (PRs). A few general guidelines that cover both:
 
-- Search for existing Issues and PRs before creating your own.
+- Search for [existing Issues](https://github.com/robotics-club-sist/robotics-club-sist.github.io/issues) and PRs before creating your own.
 - We work hard to makes sure issues are handled in a timely manner but, depending on the impact, it could take a while to investigate the root cause. A friendly ping in the comment thread to the submitter or a contributor can help draw attention if your issue is blocking.
 
 ## Issues
 
-Issues should be used to report problems with the code, request a new feature, or to discuss potential changes before a PR is created. When you create a new Issue, a template will be loaded that will guide you through collecting and providing the information we need to investigate.
+Issues should be used to report problems with the code, request a new feature, or to discuss potential changes before a PR is created.
+
+### Create a new issue
+
+When you create a [new Issue](https://github.com/robotics-club-sist/robotics-club-sist.github.io/issues/new/choose), a template will be loaded that will guide you through collecting and providing the information we need to investigate.
 
 If you find an Issue that addresses the problem you're having, please add your own reproduction information to the existing issue rather than creating a new one. Adding a reaction can also help be indicating to our maintainers that a particular problem is affecting more than just the reporter.
+
+### Solve an issue
+
+Scan through our [existing issues](https://github.com/robotics-club-sist/robotics-club-sist.github.io/issues) to find one that interests you. You can narrow down the search using labels as filters. See Labels for more information. If you find an issue to work on, you are welcome to open a PR with a fix.
+
+## Pull Request
+
+When you're finished with the changes, create a pull request, also known as a PR.
+
+- Fill the [Pull Request](PULL_REQUEST_TEMPLATE.md) template so that we can review your PR. This template helps reviewers understand your changes as well as the purpose of your pull request.
+- Don't forget to [link PR to issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue) if you are solving one.
+- Once you submit your PR, team member will review your proposal. We may ask questions or request for additional information.
+- We may ask for changes to be made before a PR can be merged, either using [suggested changes](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/incorporating-feedback-in-your-pull-request) or pull request comments. You can make changes in your fork, then commit them to your branch.
+- As you update your PR and apply changes, mark each conversation as [resolved](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request#resolving-conversations).
+- If you run into any merge issues, checkout this [git tutorial](https://lab.github.com/githubtraining/managing-merge-conflicts) to help you resolve merge conflicts and other issues.
 
 ## Contributing
 
