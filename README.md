@@ -6,7 +6,7 @@
 [![website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](robotics-club-sist.github.io)
 [![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/Q7vEEAEJ8K)
 
-This project is serves as a landing page site for Robotics Club @ Sathyabama IST.
+This project serves as a landing page site for the Robotics Club @ Sathyabama IST.
 
 ## Quick start
 
