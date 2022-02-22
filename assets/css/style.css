@@ -3,7 +3,7 @@ body {
   color: #444444;
 }
 a.details-link{
-  color:blue
+  color:cyan
 }
 a {
   color: #47b2e4;
@@ -685,7 +685,7 @@ section {
   font-size: 18px;
   /* color: rgb(88, 160, 165); */
   font-weight: 600;
-  color:blue;
+  color:cyan;
   margin-bottom: 0px;
 }
 .portfolio .portfolio-item .portfolio-info p {
