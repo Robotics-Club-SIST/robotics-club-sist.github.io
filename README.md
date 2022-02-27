@@ -1,9 +1,9 @@
 # [robotics-club-sist.github.io](robotics-club-sist.github.io)
 
-[![release](https://img.shields.io/github/v/release/robotics-club-sist/robotics-club-sist.github.io)](https://github.com/Robotics-Club-SIST/robotics-club-sist.github.io/releases/tag/v1.0.0)
+[![release](https://img.shields.io/github/v/release/robotics-club-sist/robotics-club-sist.github.io)](https://github.com/Robotics-Club-SIST/robotics-club-sist.github.io/releases/tag/v1.1.0)
 [![license](https://img.shields.io/github/license/robotics-club-sist/robotics-club-sist.github.io)](license)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
-[![website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](robotics-club-sist.github.io)
+[![website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](roboticsclubsist.com)
 [![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/Q7vEEAEJ8K)
 
 This project serves as a landing page site for the Robotics Club @ Sathyabama IST.
