@@ -30,7 +30,7 @@
   <!--js-->
 
   <style>
-    #hiddeniframe {
+    .hiddeniframe {
       display: none;
     }
   </style>
@@ -652,14 +652,14 @@
             <button class="btn btn-outline-primary btn-lg" id="contactbutton" style="padding:10px">Contact Us
             </button>
             <br><br>
-            <iframe id="hiddeniframe" class="justify-content-center"
+            <iframe  class="justify-content-center btn-frame hiddeniframe"
               src="https://docs.google.com/forms/d/e/1FAIpQLSeTqTixSgAfLt2pvxkzD-lzNuszPHp5Fgd2MRs3O0P1rCWdDw/viewform?embedded=true"
               width="640px" height="750" frameborder="0" marginheight="0" marginwidth="0"></iframe>
           </div>
         </div>
       </div>
     </div>
-    <script>
+    <!-- <script>
       document.getElementById("contactbutton").onclick = function () {
         if (document.getElementById("hiddeniframe").style == 'block') {
           document.getElementById("hiddeniframe").style.display = 'none'
@@ -667,7 +667,7 @@
           document.getElementById("hiddeniframe").style.display = 'block'
         }
       };
-    </script>
+    </script> -->
     <div class="footer-top">
       <div class="container">
         <div class="row justify-content-center">
@@ -724,6 +724,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/next.js"></script>
 
 </body>
 
