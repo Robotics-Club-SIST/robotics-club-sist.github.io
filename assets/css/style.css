@@ -1414,3 +1414,11 @@ section {
     width: 100%;
   }
 }
+
+marquee{
+   background:rgba(148, 169, 206, 0.9); 
+  font-family:"open-sans",sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color:#37517e
+}
