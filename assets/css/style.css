@@ -142,6 +142,19 @@ h1, h2, h3, h4, h5, h6 {
 .navbar li {
   position: relative;
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* backdrop-filter: blur(px); */
+  z-index:-1 ;
+}
+.hidden{
+  display:none;
+}
 .navbar a, .navbar a:focus {
   display: flex;
   align-items: center;
@@ -249,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 55px;
   right: 15px;
-  bottom: 15px;
+  /* bottom: 15px; */
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
@@ -466,30 +479,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Clients
---------------------------------------------------------------*/
-.clients {
-  padding: 12px 0;
-  text-align: center;
-}
-.clients img {
-  max-width: 45%;
-  transition: all 0.4s ease-in-out;
-  display: inline-block;
-  padding: 15px 0;
-  filter: grayscale(100);
-}
-.clients img:hover {
-  filter: none;
-  transform: scale(1.1);
-}
-@media (max-width: 768px) {
-  .clients img {
-    max-width: 40%;
-  }
-}
-
-/*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
 .about .content h3 {
@@ -596,45 +585,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-.services .icon-box {
-  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-  padding: 50px 30px;
-  transition: all ease-in-out 0.4s;
-  background: #fff;
-}
-.services .icon-box .icon {
-  margin-bottom: 10px;
-}
-.services .icon-box .icon i {
-  color: #47b2e4;
-  font-size: 36px;
-  transition: 0.3s;
-}
-.services .icon-box h4 {
-  font-weight: 500;
-  margin-bottom: 15px;
-  font-size: 24px;
-}
-.services .icon-box h4 a {
-  color: #37517e;
-  transition: ease-in-out 0.3s;
-}
-.services .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-.services .icon-box:hover {
-  transform: translateY(-10px);
-}
-.services .icon-box:hover h4 a {
-  color: #47b2e4;
-}
-
-
-/*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio #portfolio-flters {
@@ -708,7 +658,7 @@ section {
   right: 10px;
 }
 .portfolio .portfolio-item:hover .portfolio-img img {
-  transform: scale(1.15);
+  transform: scale(1.05);
 }
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
@@ -849,182 +799,6 @@ section {
 }
 .team .member .social a + a {
   margin-left: 8px;
-}
-
-/*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-.pricing .row {
-  padding-top: 40px;
-}
-.pricing .box {
-  padding: 60px 40px;
-  box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
-  background: #fff;
-  height: 100%;
-  border-top: 4px solid #fff;
-  border-radius: 5px;
-}
-.pricing h3 {
-  font-weight: 500;
-  margin-bottom: 15px;
-  font-size: 20px;
-  color: #37517e;
-}
-.pricing h4 {
-  font-size: 48px;
-  color: #37517e;
-  font-weight: 400;
-  font-family: "Jost", sans-serif;
-  margin-bottom: 25px;
-}
-.pricing h4 sup {
-  font-size: 28px;
-}
-.pricing h4 span {
-  color: #47b2e4;
-  font-size: 18px;
-  display: block;
-}
-.pricing ul {
-  padding: 20px 0;
-  list-style: none;
-  color: #999;
-  text-align: left;
-  line-height: 20px;
-}
-.pricing ul li {
-  padding: 10px 0 10px 30px;
-  position: relative;
-}
-.pricing ul i {
-  color: #28a745;
-  font-size: 24px;
-  position: absolute;
-  left: 0;
-  top: 6px;
-}
-.pricing ul .na {
-  color: #ccc;
-}
-.pricing ul .na i {
-  color: #ccc;
-}
-.pricing ul .na span {
-  text-decoration: line-through;
-}
-.pricing .buy-btn {
-  display: inline-block;
-  padding: 12px 35px;
-  border-radius: 50px;
-  color: #47b2e4;
-  transition: none;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: "Jost", sans-serif;
-  transition: 0.3s;
-  border: 1px solid #47b2e4;
-}
-.pricing .buy-btn:hover {
-  background: #47b2e4;
-  color: #fff;
-}
-.pricing .featured {
-  border-top-color: #47b2e4;
-}
-.pricing .featured .buy-btn {
-  background: #47b2e4;
-  color: #fff;
-}
-.pricing .featured .buy-btn:hover {
-  background: #23a3df;
-}
-@media (max-width: 992px) {
-  .pricing .box {
-    max-width: 60%;
-    margin: 0 auto 30px auto;
-  }
-}
-@media (max-width: 767px) {
-  .pricing .box {
-    max-width: 80%;
-    margin: 0 auto 30px auto;
-  }
-}
-@media (max-width: 420px) {
-  .pricing .box {
-    max-width: 100%;
-    margin: 0 auto 30px auto;
-  }
-}
-
-/*--------------------------------------------------------------
-# Frequently Asked Questions
---------------------------------------------------------------*/
-.faq .faq-list {
-  padding: 0 100px;
-}
-.faq .faq-list ul {
-  padding: 0;
-  list-style: none;
-}
-.faq .faq-list li + li {
-  margin-top: 15px;
-}
-.faq .faq-list li {
-  padding: 20px;
-  background: #fff;
-  border-radius: 4px;
-  position: relative;
-}
-.faq .faq-list a {
-  display: block;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  padding: 0 30px;
-  outline: none;
-  cursor: pointer;
-}
-.faq .faq-list .icon-help {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  left: 20px;
-  color: #47b2e4;
-}
-.faq .faq-list .icon-show, .faq .faq-list .icon-close {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.faq .faq-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 0;
-}
-.faq .faq-list .icon-show {
-  display: none;
-}
-.faq .faq-list a.collapsed {
-  color: #37517e;
-  transition: 0.3s;
-}
-.faq .faq-list a.collapsed:hover {
-  color: #47b2e4;
-}
-.faq .faq-list a.collapsed .icon-show {
-  display: inline-block;
-}
-.faq .faq-list a.collapsed .icon-close {
-  display: none;
-}
-@media (max-width: 1200px) {
-  .faq .faq-list {
-    padding: 0;
-  }
 }
 
 /*--------------------------------------------------------------
