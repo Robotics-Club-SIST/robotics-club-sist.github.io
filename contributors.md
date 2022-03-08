@@ -26,4 +26,4 @@ Thanks to all the contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-Contributions of any kind are welcome and will be mentioned ^\_^
+Contributions of any kind are welcome and will be mentioned ^_^
