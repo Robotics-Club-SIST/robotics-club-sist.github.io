@@ -128,6 +128,8 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
+const overlay = document.querySelector(".overlay");
+
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
       e.preventDefault()
@@ -136,7 +138,8 @@
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
         let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
+        // navbarToggle.classList.toggle('bi-list')
+        overlay.classList.add('hidden');
         navbarToggle.classList.toggle('bi-x')
       }
       scrollto(this.hash)
