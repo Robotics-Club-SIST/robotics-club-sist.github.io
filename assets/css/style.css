@@ -3,7 +3,7 @@ body {
   color: #444444;
 }
 a.details-link{
-  color:cyan
+  color:#37517e
 }
 a {
   color: #47b2e4;
@@ -615,7 +615,7 @@ section {
   overflow: hidden;
 }
 .portfolio .portfolio-item .portfolio-img img {
-  transition: all 0.6s;
+  transition: all 0.4s;
   width:350px;
   height:250px;
 }
@@ -625,17 +625,17 @@ section {
   left: 12px;
   bottom: 0;
   z-index: 3;
-  right: 15px;
+  right: 12px;
   transition: all 0.2s;
-  background: transparent;
-  padding: 10px 15px;
+  background:white;
+  padding: 15px 15px;
   width:initial;
 }
 .portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
-  /* color: rgb(88, 160, 165); */
+  color:#37517e;
   font-weight: 600;
-  color:cyan;
+  
   margin-bottom: 0px;
 }
 .portfolio .portfolio-item .portfolio-info p {
@@ -649,7 +649,7 @@ section {
   font-size: 24px;
   top: calc(50% - 18px);
   /* color: #fff; */
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
   color: #47b2e4;
@@ -664,6 +664,18 @@ section {
   opacity: 1;
 }
 
+@media (min-width:376px) and (max-width:767px){
+  .portfolio-item{
+    margin-bottom: 30px;
+  }
+  .portfolio-img{
+    width:fit-content;
+    
+  }
+  .portfolio-info{
+    max-width:360px
+  }
+}
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -717,7 +729,11 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
-
+.portfolio-img,.portfolio-info{
+  margin-right: auto;
+  margin-left: auto;
+  
+}
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
