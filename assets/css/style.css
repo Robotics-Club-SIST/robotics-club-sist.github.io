@@ -3,7 +3,9 @@ body {
   color: #444444;
 }
 a.details-link{
-  color:#37517e
+  color:#37517e;
+  font-size: 12px !important;
+  font-family: "Jost", sans-serif;
 }
 a {
   color: #47b2e4;
