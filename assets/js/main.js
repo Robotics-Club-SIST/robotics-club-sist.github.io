@@ -109,11 +109,11 @@
   /**
    * Mobile nav toggle
    */
-  // on('click', '.mobile-nav-toggle', function(e) {
-  //   select('#navbar').classList.toggle('navbar-mobile')
-  //   this.classList.toggle('bi-list')
-  //   this.classList.toggle('bi-x')
-  // })
+  on('click', '.mobile-nav-toggle', function(e) {
+    select('#navbar').classList.toggle('navbar-mobile')
+    this.classList.toggle('bi-list')
+    this.classList.toggle('bi-x')
+  })
 
   /**
    * Mobile nav dropdowns activate
@@ -128,8 +128,6 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-const overlay = document.querySelector(".overlay");
-
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
       e.preventDefault()
@@ -138,8 +136,7 @@ const overlay = document.querySelector(".overlay");
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
         let navbarToggle = select('.mobile-nav-toggle')
-        // navbarToggle.classList.toggle('bi-list')
-        overlay.classList.add('hidden');
+        navbarToggle.classList.toggle('bi-list')
         navbarToggle.classList.toggle('bi-x')
       }
       scrollto(this.hash)
@@ -256,5 +253,12 @@ const overlay = document.querySelector(".overlay");
       mirror: false
     });
   });
+
+  const contactBtn = document.getElementById("contactbutton")
+  const googleForm = document.getElementsByClassName("hiddeniframe2")
+
+  contactBtn.addEventListener("click", function() {
+    googleForm.classList.toggle("hiddeniframe")
+  })
 
 })()
