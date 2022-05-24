@@ -852,6 +852,10 @@ section {
 .team .member .social a + a {
   margin-left: 8px;
 }
+.team .quote {
+  font-style: italic;
+  color: #36517e;
+}
 
 /*--------------------------------------------------------------
 # Contact
