@@ -133,3 +133,6 @@ dmypy.json
 
 # Ignore PDF files
 *.pdf
+
+# Ignore todo list
+todo.txt
