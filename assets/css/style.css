@@ -1,6 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  background-color: #f4f5fa;
 }
 a.details-link{
   color:#37517e;
@@ -394,6 +395,42 @@ h1, h2, h3, h4, h5, h6 {
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
+#hero .hero-socials {
+  padding: 30px 0;
+  display: flex;
+}
+#hero .hero-socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  /* border-radius: 50%; */
+}
+#hero .hero-socials a i {
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+#hero .hero-socials a i:hover {
+  /* background-color: white; */
+  color: #47b3e4;
+  border-color: #47b3e4;
+}
+@media (max-width: 991px) {
+  #hero .hero-socials {
+    justify-content: center;
+  }
+}
+
 /*@media (min-width:992px){
   #hero {
     height: 100vh;
@@ -696,7 +733,8 @@ section {
   right: 10px;
 }
 .portfolio .portfolio-item:hover .portfolio-img img {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
+  filter: brightness(60%);
 }
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
@@ -1073,8 +1111,8 @@ section {
   background: #37517e;
 }
 #footer .footer-newsletter {
-  padding: 50px 0;
-  background: #f3f5fa;
+  padding: 20px 0;
+  background: #fff;
   text-align: center;
   font-size: 15px;
   color: #444444;
@@ -1120,11 +1158,15 @@ section {
   background: #209dd8;
 }
 #footer .footer-top {
-  padding: 60px 0 30px 0;
+  padding: 0;
   background: #fff;
 }
 #footer .footer-top .footer-contact {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
+}
+#footer .footer-top .container .socials {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 #footer .footer-top .footer-contact h3 {
   font-size: 28px;
@@ -1181,6 +1223,10 @@ section {
   text-decoration: none;
   color: #47b2e4;
 }
+#footer .footer-top .socials {
+  /* margin-bottom: 0px; */
+  margin: 15px 0;
+} 
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
@@ -1201,16 +1247,18 @@ section {
   text-decoration: none;
 }
 #footer .footer-bottom {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #fff;
 }
 #footer .copyright {
   float: left;
+  font-size: 10px;
+
 }
 #footer .credits {
   float: right;
-  font-size: 13px;
+  font-size: 10px;
 }
 #footer .credits a {
   transition: 0.3s;
@@ -1226,6 +1274,9 @@ section {
   }
   #footer .credits {
     padding-top: 4px;
+  }
+  #footer #last-br {
+    display: none;
   }
 }
 @media (max-width: 1440px) {
