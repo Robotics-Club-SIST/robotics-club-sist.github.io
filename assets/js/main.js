@@ -254,11 +254,11 @@
     });
   });
 
-  const contactBtn = document.getElementById("contactbutton")
-  const googleForm = document.getElementsByClassName("hiddeniframe2")
-
-  contactBtn.addEventListener("click", function() {
-    googleForm.classList.toggle("hiddeniframe")
-  })
+  const frameBtn = document.querySelector("#contactbutton");
+  const frameSelection = document.querySelector(".btn-frame");
+  const toggleFrame = function () {
+    frameSelection.classList.toggle("hiddeniframe");
+  };
+  frameBtn.addEventListener("click", toggleFrame);
 
 })()
