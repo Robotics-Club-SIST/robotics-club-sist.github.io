@@ -18,9 +18,6 @@
   <link href=assets/vendor/glightbox/css/glightbox.min.css rel=stylesheet>
   <link href=assets/vendor/remixicon/remixicon.css rel=stylesheet>
   <link href=assets/vendor/swiper/swiper-bundle.min.css rel=stylesheet>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <link href=assets/css/style.css rel=stylesheet>
   <style>
     .hiddeniframe {
@@ -40,21 +37,33 @@
           <li><a href=#about class="scrollto nav-link">About Us</a>
           <li class="dropdown"><a href="#" class="scrollto nav-link"><span>Teams</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
+<!--
+***NOTE***
+- Current team (first list element) points to #team
+- Add the penultimate team below it
+-->
               <li><a href="#team">Current team</a></li>
+              <!-- Penultimate team goes here -->
               <li><a href="teams.html#2020-21">2020-21</a></li>
-              <li><a href="teams.html#2019-20">2019-20</a></li>
-              <li><a href="teams.html#2018-19">2018-19</a></li>
             </ul>
           </li>
           <li><a href=#Events class="scrollto nav-link">Past Events</a>
           <li><a href=#upcoming class="scrollto nav-link">Upcoming Events</a>
-          <li><a href=#contact class="scrollto nav-link">Contact</a>
+          <li><a href=#footer class="scrollto nav-link">Contact</a>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
         <div class="hidden overlay"></div>
       </nav>
     </div>
   </header>
+
+  <!-- Social icons on the side -->
+  <div class="icon-bar">
+    <a href="mailto:roboticsclubsist@gmail.com" id="mail" target="_blank"><i class="bi bi-google"></i></a>
+    <a href="https://discord.gg/Uehut6jEXZ" id="discord" target="_blank"><i class="bi bi-discord"></i></a>
+    <a href="https://instagram.com/robotics_club_sathyabama" id="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/robotics-sathyabama/" id="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+  </div>
 
   <!--hero section-->
   <section class="d-flex align-items-center" id=hero>
@@ -68,12 +77,6 @@
               class="scrollto btn-get-started">About Us</a> <a
               href=https://drive.google.com/file/d/1G-SVa4rW-pr5mrySp7dyaUHzJ41o_Krr/preview
               class="btn-watch-video glightbox"><i class="bi bi-play-circle"></i><span>Watch Video</span></a></div>
-              <div class="hero-socials">
-                <a href="mailto:roboticsclubsist@gmail.com"><i class="bi bi-envelope"></i></a>
-                <a href="https://discord.gg/Uehut6jEXZ"><i class="bi bi-discord"></i></a>
-                <a href="https://instagram.com/robotics_club_sathyabama"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/robotics-sathyabama/"><i class="bi bi-linkedin"></i></a>
-              </div>
         </div>
         <div class="col-lg-6 hero-img order-1 order-lg-2" data-aos=zoom-in data-aos-delay=200><img alt=""
             class="img-fluid animated" src=assets/img/hero-img.webp> </div>
@@ -105,87 +108,164 @@
     </section>
     <!--end about us sec-->
 
-    <!--team-->
-    <section class="section-bg team" id=team>
+    <!-- team section -->
+<!-- 
+***NOTE***
+- Before changing the teams section here, follow the comments in teams.html
+- Make sure to change nav bar links with the id you give
+- Change id to team
+-->
+<!-- REPLACE BELOW TO CHANGE TEAMS -->
+    <section class="section-bg team 2020-21" id=team>
       <div class=container data-aos=fade-up>
         <div class=section-title>
-          <h2>Our incredible Team</h2>
+          <h2>Team of 2020-21</h2>
           <p>CORE TEAM
         </div>
         <div class=row>
+
           <div class=col-lg-6>
             <div class="d-flex align-items-start member" data-aos=zoom-in data-aos-delay=100>
-              <div class=pic><img alt="" class=img-fluid src=assets/img/team/sanjay.webp> </div>
+              <div class=pic><img alt="" class=img-fluid src="assets/img/team/sanjay.webp"> </div>
               <div class=member-info><br>
                 <h4>Sanjay</h4><span>President</span>
-                <div class=social><a href=mailto:cssanjaykumar02@gmail.com><i class="bi bi-envelope"></i></a> <a
-                    href=https://www.linkedin.com/in/sanjaykumar19> <i class=ri-linkedin-box-fill></i></a></div>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:cssanjaykumar02@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:cssanjaykumar02@gmail.com">cssanjaykumar02@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="https://www.linkedin.com/in/sanjaykumar19"> <i class=ri-linkedin-box-fill></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="https://www.linkedin.com/in/sanjaykumar19">Sanjay Kumar S</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
           <div class="col-lg-6 mt-4 mt-lg-0">
             <div class="d-flex align-items-start member" data-aos=zoom-in data-aos-delay=100>
-              <div class=pic><img alt="" class=img-fluid src=assets/img/team/rakshi-1.webp
-                  style=transform:rotate(-40deg)></div>
+              <div class=pic><img alt="" class=img-fluid src="assets/img/team/rakshi-1.webp" style=transform:rotate(-40deg)></div>
               <div class=member-info><br>
                 <h4>Rakshi</h4><span>Vice-President</span>
-                <div class=social><a href=mailto:rakshising@gmail.com><i class="bi bi-envelope"></i></a> <a
-                    href=https://www.linkedin.com/in/rakshi-a-d-2101221b7> <i class=ri-linkedin-box-fill></i></a>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:rakshising@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:rakshising@gmail.com">rakshising@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="https://www.linkedin.com/in/rakshi-a-d-2101221b7/"> <i class=ri-linkedin-box-fill></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="https://www.linkedin.com/in/rakshi-a-d-2101221b7/">Rakshi A.D</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="col-lg-6 mt-4">
             <div class="d-flex align-items-start member" data-aos=zoom-in data-aos-delay=100>
-              <div class=pic><img alt="" class=img-fluid src=assets/img/team/rohit-1.webp> </div>
+              <div class=pic><img alt="" class=img-fluid src="assets/img/team/rohit-1.webp"> </div>
               <div class=member-info><br>
-                <h4>Rohit</h4><span>Cluster Coordinator</span>
-                <div class=social><a href=mailto:rohitsarav14@gmail.com><i class="bi bi-envelope"></i></a> <a
-                    href=https://www.linkedin.com/in/rohit-s-693a9b201> <i class=ri-linkedin-box-fill></i></a>
+                <h4>Rohit</h4><span>Cluster coordinator</span>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:rohitsarav14@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:rohitsarav14@gmail.com">rohitsarav14@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="https://www.linkedin.com/in/rohit-s-693a9b201/"> <i class=ri-linkedin-box-fill></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="https://www.linkedin.com/in/rohit-s-693a9b201/">Rohit S</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="col-lg-6 mt-4">
             <div class="d-flex align-items-start member" data-aos=zoom-in data-aos-delay=100>
-              <div class=pic><img alt="" class=img-fluid src=assets/img/team/snekanth-1.webp> </div>
+              <div class=pic><img alt="" class=img-fluid src="assets/img/team/snekanth-1.webp"> </div>
               <div class=member-info><br>
                 <h4>Snekanth</h4><span>Secretary</span>
-                <div class=social><a href=mailto:snekanth10139@gmail.com><i class="bi bi-envelope"></i></a> <a
-                    href=https://www.linkedin.com/in/snekanth-b-172b7b1aa> <i class=ri-linkedin-box-fill></i></a>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:snekanth10139@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:snekanth10139@gmail.com">snekanth10139@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="https://www.linkedin.com/in/snekanth-b-172b7b1aa/"> <i class=ri-linkedin-box-fill></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="https://www.linkedin.com/in/snekanth-b-172b7b1aa/">SNEKANTH B</a>
+
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="col-lg-6 mt-4">
             <div class="d-flex align-items-start member" data-aos=zoom-in data-aos-delay=100>
-              <div class=pic><img alt="" class=img-fluid src=assets/img/team/salamon.webp> </div>
+              <div class=pic><img alt="" class=img-fluid src="assets/img/team/salamon.webp"> </div>
               <div class=member-info><br>
                 <h4>Salamon</h4><span>Executive</span>
-                <div class=social><a href=mailto:salamon200135@gmail.com><i class="bi bi-envelope"></i></a> <a
-                    href=https://www.linkedin.com/in/salamon-arockiaraj> <i class=ri-linkedin-box-fill></i></a>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:salamon200135@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:salamon200135@gmail.com">salamon200135@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="https://www.linkedin.com/in/salamon-arockiaraj/"> <i class=ri-linkedin-box-fill></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="https://www.linkedin.com/in/salamon-arockiaraj/">SALAMON AROCKIARAJ K</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="col-lg-6 mt-4">
             <div class="d-flex align-items-start member" data-aos=zoom-in data-aos-delay=100>
-              <div class=pic><img alt="" class=img-fluid src=assets/img/team/swadharshana.webp> </div>
+              <div class=pic><img alt="" class=img-fluid src="assets/img/team/swadharshana.webp"> </div>
               <div class=member-info><br>
                 <h4>Swadarshana</h4><span>Treasurer</span>
-                <div class=social><a href=mailto:swadarshanapulavarthy@gmail.com><i class="bi bi-envelope"></i></a> <a
-                    href=https://www.linkedin.com/in/swadarshana-pulavarthy-5a818b215> <i
-                      class=ri-linkedin-box-fill></i></a></div>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:swadarshanapulavarthy@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:swadarshanapulavarthy@gmail.com">swadarshanapulavarthy@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="https://www.linkedin.com/in/swadarshana-pulavarthy-5a818b215/"> <i class=ri-linkedin-box-fill></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="https://www.linkedin.com/in/swadarshana-pulavarthy-5a818b215/">Swadarshana Pulavarthy</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="d-flex align-items-start member" data-aos=zoom-in data-aos-delay=100>
+              <div class=pic><img alt="" class=img-fluid src=assets/img/team/placeholder.webp> </div>
+              <div class=member-info><br>
+                <h4>Mrs. Ramya</h4><span>Faculty coordinator</span>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:ramya.devasahayam@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:ramya.devasahayam@gmail.com">ramya.devasahayam@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="#"> <i class=ri-phone-fill></i></a>
+                    <p>+91 12345 67890</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
-    <!--end team sec-->
+<!-- REPLACE ABOVE TO CHANGE TEAMS -->
+    <!-- end team -->
 
     <!--past events-->
-    <section class=portfolio id=Events>
+    <section class=portfolio id=Events style="background-color: white;">
       <div class=container data-aos=fade-up>
         <div class=section-title>
           <h2>Past Events</h2>
@@ -409,7 +489,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
-            <h4>Have any queries?</h4><button class="btn btn-lg btn-outline-primary" id=contactbutton
+            <h4 id="google-form">Have any queries?</h4><button class="btn btn-lg btn-outline-primary" id=contactbutton
               style=padding:10px>Contact Us</button>
               <iframe
               class="btn-frame hiddeniframe hiddeniframe2 justify-content-center" frameborder=0 height=750 marginheight=0
@@ -420,10 +500,10 @@
         </div>
       </div>
     </div>
-    <div class=footer-top>
+    <div class=footer-top style="background-color: #f4f5fa;">
       <div class=container>
         <div class="row justify-content-center">
-          <!-- <div class="col-md-6 col-lg-3 footer-links section-title socials">
+          <div class="col-md-6 col-lg-3 footer-links section-title socials">
             <h3>Socials</h3>
             <p>
             <div class="mt-3 social-links"><a href=mailto:roboticsclubsist@gmail.com title=roboticsclubsist@gmail.com><i
@@ -432,7 +512,7 @@
                   href=https://instagram.com/robotics_club_sathyabama class=instagram><i
                     class="bx bxl-instagram"></i></a> <a href=https://www.linkedin.com/company/robotics-sathyabama/
                   class=linkedin><i class="bx bxl-linkedin"></i></a></div>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>

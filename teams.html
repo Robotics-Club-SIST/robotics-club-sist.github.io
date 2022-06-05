@@ -40,24 +40,50 @@
             <ul>
               <li><a href="index.html#team">Current team</a></li>
               <li><a href="teams.html#2020-21">2020-21</a></li>
-              <li><a href="teams.html#2019-20">2019-20</a></li>
-              <li><a href="teams.html#2018-19">2018-19</a></li>
             </ul>
           </li>
           <li><a href=index.html#Events class="scrollto nav-link">Past Events</a>
           <li><a href=index.html#upcoming class="scrollto nav-link">Upcoming Events</a>
-          <li><a href=index.html#contact class="scrollto nav-link">Contact</a>
+          <li><a href=index.html#google-form class="scrollto nav-link">Contact</a>
         </ul><i class="bi bi-list mobile-nav-toggle"></i>
         <div class="hidden overlay"></div>
       </nav>
     </div>
   </header>
 
+  <!-- <div class="icon-bar">
+    <a href="#" id="mail"><img src="assets/vendor/icons-extra/gmail.png" alt=""></a>
+    <a href="#" id="discord"><img src="assets/vendor/icons-extra/discord.png" alt=""></a>
+    <a href="#" id="instagram"><img src="assets/vendor/icons-extra/instagram.png" alt=""></a>
+    <a href="#" id="linkedin"><img src="assets/vendor/icons-extra/linkedin.png" alt=""></a>
+  </div> -->
+  <div class="icon-bar">
+    <a href="mailto:roboticsclubsist@gmail.com" id="mail" target="_blank"><i class="bi bi-google"></i></a>
+    <a href="https://discord.gg/Uehut6jEXZ" id="discord" target="_blank"><i class="bi bi-discord"></i></a>
+    <a href="https://instagram.com/robotics_club_sathyabama" id="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/robotics-sathyabama/" id="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+  </div>
+
+
+
 <br><br><br>
 
   <main id=main>
 
-    <!-- START 2021-2022 -->
+<!-- 
+*** NOTE ***
+Before adding the next team section READ THESE:
+- Make sure the photos of the members are square in dimension and are in .webp format
+- If the face is not straight, either rotate it while its in jpeg or use inline transform css to rotate it
+- Give it an id like 2022-23
+- Add it just below this comment and not at the end
+- Make a note of the inline css for .member>.member-info>.social-outer>.social-inner>a
+- Other than that you have to copy paste the below section and just replace names, links and image paths
+- After creating this section without any errors, just copy and paste it in index.html inside section tag (You will find comments to guide you there)
+- Finally dont forget to add the section in the navbar
+-->
+
+    <!-- START 2021-22 -->
     <section class="section-bg team 2021-22" id=2021-22>
       <div class=container data-aos=fade-up>
         <div class=section-title>
@@ -68,24 +94,37 @@
 
           <div class=col-lg-6>
             <div class="d-flex align-items-start member" data-aos=zoom-in data-aos-delay=100>
-              <div class=pic><img alt="" class=img-fluid src=assets/img/team/sanjay.webp> </div>
+              <div class=pic><img alt="" class=img-fluid src="assets/img/team/sanjay.webp"> </div>
               <div class=member-info><br>
                 <h4>Sanjay</h4><span>President</span>
-                <div class=social><a href=mailto:cssanjaykumar02@gmail.com><i class="bi bi-envelope"></i></a> <a
-                    href=https://www.linkedin.com/in/sanjaykumar19> <i class=ri-linkedin-box-fill></i></a></div>
-                    <p class="quote"></p>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:cssanjaykumar02@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:cssanjaykumar02@gmail.com">cssanjaykumar02@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="https://www.linkedin.com/in/sanjaykumar19"> <i class=ri-linkedin-box-fill></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="https://www.linkedin.com/in/sanjaykumar19">Sanjay Kumar S</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-6 mt-4 mt-lg-0">
             <div class="d-flex align-items-start member" data-aos=zoom-in data-aos-delay=100>
-              <div class=pic><img alt="" class=img-fluid src=assets/img/team/rakshi-1.webp
-                  style=transform:rotate(-40deg)></div>
+              <div class=pic><img alt="" class=img-fluid src="assets/img/team/rakshi-1.webp" style=transform:rotate(-40deg)></div>
               <div class=member-info><br>
                 <h4>Rakshi</h4><span>Vice-President</span>
-                <div class=social><a href=mailto:rakshising@gmail.com><i class="bi bi-envelope"></i></a> <a
-                    href=https://www.linkedin.com/in/rakshi-a-d-2101221b7> <i class=ri-linkedin-box-fill></i></a>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:rakshising@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:rakshising@gmail.com">rakshising@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="https://www.linkedin.com/in/rakshi-a-d-2101221b7/"> <i class=ri-linkedin-box-fill></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="https://www.linkedin.com/in/rakshi-a-d-2101221b7/">Rakshi A.D</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -93,11 +132,18 @@
 
           <div class="col-lg-6 mt-4">
             <div class="d-flex align-items-start member" data-aos=zoom-in data-aos-delay=100>
-              <div class=pic><img alt="" class=img-fluid src=assets/img/team/rohit-1.webp> </div>
+              <div class=pic><img alt="" class=img-fluid src="assets/img/team/rohit-1.webp"> </div>
               <div class=member-info><br>
-                <h4>Rohit</h4><span>Cluster Coordinator</span>
-                <div class=social><a href=mailto:rohitsarav14@gmail.com><i class="bi bi-envelope"></i></a> <a
-                    href=https://www.linkedin.com/in/rohit-s-693a9b201> <i class=ri-linkedin-box-fill></i></a>
+                <h4>Rohit</h4><span>Cluster coordinator</span>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:rohitsarav14@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:rohitsarav14@gmail.com">rohitsarav14@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="https://www.linkedin.com/in/rohit-s-693a9b201/"> <i class=ri-linkedin-box-fill></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="https://www.linkedin.com/in/rohit-s-693a9b201/">Rohit S</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -105,11 +151,19 @@
 
           <div class="col-lg-6 mt-4">
             <div class="d-flex align-items-start member" data-aos=zoom-in data-aos-delay=100>
-              <div class=pic><img alt="" class=img-fluid src=assets/img/team/snekanth-1.webp> </div>
+              <div class=pic><img alt="" class=img-fluid src="assets/img/team/snekanth-1.webp"> </div>
               <div class=member-info><br>
                 <h4>Snekanth</h4><span>Secretary</span>
-                <div class=social><a href=mailto:snekanth10139@gmail.com><i class="bi bi-envelope"></i></a> <a
-                    href=https://www.linkedin.com/in/snekanth-b-172b7b1aa> <i class=ri-linkedin-box-fill></i></a>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:snekanth10139@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:snekanth10139@gmail.com">snekanth10139@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="https://www.linkedin.com/in/snekanth-b-172b7b1aa/"> <i class=ri-linkedin-box-fill></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="https://www.linkedin.com/in/snekanth-b-172b7b1aa/">SNEKANTH B</a>
+
+                  </div>
                 </div>
               </div>
             </div>
@@ -117,11 +171,18 @@
 
           <div class="col-lg-6 mt-4">
             <div class="d-flex align-items-start member" data-aos=zoom-in data-aos-delay=100>
-              <div class=pic><img alt="" class=img-fluid src=assets/img/team/salamon.webp> </div>
+              <div class=pic><img alt="" class=img-fluid src="assets/img/team/salamon.webp"> </div>
               <div class=member-info><br>
                 <h4>Salamon</h4><span>Executive</span>
-                <div class=social><a href=mailto:salamon200135@gmail.com><i class="bi bi-envelope"></i></a> <a
-                    href=https://www.linkedin.com/in/salamon-arockiaraj> <i class=ri-linkedin-box-fill></i></a>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:salamon200135@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:salamon200135@gmail.com">salamon200135@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="https://www.linkedin.com/in/salamon-arockiaraj/"> <i class=ri-linkedin-box-fill></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="https://www.linkedin.com/in/salamon-arockiaraj/">SALAMON AROCKIARAJ K</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -129,12 +190,19 @@
 
           <div class="col-lg-6 mt-4">
             <div class="d-flex align-items-start member" data-aos=zoom-in data-aos-delay=100>
-              <div class=pic><img alt="" class=img-fluid src=assets/img/team/swadharshana.webp> </div>
+              <div class=pic><img alt="" class=img-fluid src="assets/img/team/swadharshana.webp"> </div>
               <div class=member-info><br>
                 <h4>Swadarshana</h4><span>Treasurer</span>
-                <div class=social><a href=mailto:swadarshanapulavarthy@gmail.com><i class="bi bi-envelope"></i></a> <a
-                    href=https://www.linkedin.com/in/swadarshana-pulavarthy-5a818b215> <i
-                      class=ri-linkedin-box-fill></i></a></div>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:swadarshanapulavarthy@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:swadarshanapulavarthy@gmail.com">swadarshanapulavarthy@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="https://www.linkedin.com/in/swadarshana-pulavarthy-5a818b215/"> <i class=ri-linkedin-box-fill></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="https://www.linkedin.com/in/swadarshana-pulavarthy-5a818b215/">Swadarshana Pulavarthy</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -143,10 +211,17 @@
             <div class="d-flex align-items-start member" data-aos=zoom-in data-aos-delay=100>
               <div class=pic><img alt="" class=img-fluid src=assets/img/team/placeholder.webp> </div>
               <div class=member-info><br>
-                <h4>Name</h4><span>Faculty</span>
-                <div class=social><a href="mailto:"><i class="bi bi-envelope"></i></a> <a
-                    href=""> <i
-                      class=ri-linkedin-box-fill></i></a></div>
+                <h4>Mrs. Ramya</h4><span>Faculty coordinator</span>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:ramya.devasahayam@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:ramya.devasahayam@gmail.com">ramya.devasahayam@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="#"> <i class=ri-phone-fill></i></a>
+                    <p>+91 12345 67890</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -154,7 +229,7 @@
         </div>
       </div>
     </section>
-    <!-- END 2021-2022 -->
+    <!-- END 2021-22 -->
 
     <!-- START 2020-2021 -->
     <section class="section-bg team 2020-21" id=2020-21>
@@ -170,36 +245,54 @@
               <div class=pic><img alt="" class=img-fluid src=assets/img/team/aman.webp> </div>
               <div class=member-info><br>
                 <h4>Aman Dinodiya</h4><span>President</span>
-                <div class=social><a href="mailto:amandinodiya0011@gmail.com"><i class="bi bi-envelope"></i></a> <a
-                    href="https://www.linkedin.com/in/aman-dinodiya-226847175"> <i class=ri-linkedin-box-fill></i></a></div>
-                    <p class="quote">"Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me"</p>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:amandinodiya0011@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:amandinodiya0011@gmail.com">amandinodiya0011@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="https://www.linkedin.com/in/aman-dinodiya-226847175"> <i class=ri-linkedin-box-fill></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="https://www.linkedin.com/in/aman-dinodiya-226847175">Aman Dinodiya</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-6 mt-4 mt-lg-0">
             <div class="d-flex align-items-start member" data-aos=zoom-in data-aos-delay=100>
-              <div class=pic><img alt="" class=img-fluid src=assets/img/team/teja.webp
-                  style=transform:rotate(-40deg)></div>
+              <div class=pic><img alt="" class=img-fluid src=assets/img/team/teja.webp></div>
               <div class=member-info><br>
-                <h4>Vuddagiri Teja Venkata Sai Naveen</h4><span>Vice-President</span>
-                <div class=social><a href=mailto:tejavenkatasainaveen@gmail.com><i class="bi bi-envelope"></i></a> <a
-                    href=https://www.linkedin.com/mwlite/in/vuddagiri-teja-venkata-sai-naveen-5a6bbb16a> <i class=ri-linkedin-box-fill></i></a>
+                <h4>Teja Venkata Sai Naveen</h4><span>Vice-President</span>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:tejavenkatasainaveen@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:tejavenkatasainaveen@gmail.com">tejavenkatasainaveen@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="https://www.linkedin.com/mwlite/in/vuddagiri-teja-venkata-sai-naveen-5a6bbb16a"> <i class=ri-linkedin-box-fill></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="https://www.linkedin.com/mwlite/in/vuddagiri-teja-venkata-sai-naveen-5a6bbb16a">VUDDAGIRI TEJA VENKATA SAI ...</a>
+                  </div>
                 </div>
-                <p class="quote">"Today's decision builds tomorrow"</p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-6 mt-4">
             <div class="d-flex align-items-start member" data-aos=zoom-in data-aos-delay=100>
-              <div class=pic><img alt="" class=img-fluid src=assets/img/team/placeholder.webp> </div>
+              <div class=pic><img alt="" class=img-fluid src="assets/img/team/vigneshwar.webp"> </div>
               <div class=member-info><br>
                 <h4>Vigneshwar M</h4><span>Technical head</span>
-                <div class=social><a href="mailto:vigneshwar20062001@gmail.com"><i class="bi bi-envelope"></i></a> <a
-                    href=https://www.linkedin.com/in/vigneshwar-m-63bba1187> <i
-                      class=ri-linkedin-box-fill></i></a></div>
-                <p class="quote">"That the powerful playt goes on, and you may contribute a verse"</p>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:vigneshwar20062001@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:vigneshwar20062001@gmail.com">vigneshwar20062001@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="https://www.linkedin.com/in/vigneshwar-m-63bba1187"> <i class=ri-linkedin-box-fill></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="https://www.linkedin.com/in/vigneshwar-m-63bba1187">Vigneshwar M</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -209,10 +302,16 @@
               <div class=pic><img alt="" class=img-fluid src=assets/img/team/gaurav.webp> </div>
               <div class=member-info><br>
                 <h4>Gaurav Kumar Mishra</h4><span>Secretary</span>
-                <div class=social><a href=mailto:mgaurav682@gmail.com><i class="bi bi-envelope"></i></a> <a
-                    href=https://www.linkedin.com/in/gaurav-25> <i class=ri-linkedin-box-fill></i></a>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:mgaurav682@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:mgaurav682@gmail.com">mgaurav682@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="https://www.linkedin.com/in/gaurav-25"> <i class=ri-linkedin-box-fill></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="https://www.linkedin.com/in/gaurav-25">Gaurav Kumar Mishra</a>
+                  </div>
                 </div>
-                <p class="quote">"Do what you love"</p>
               </div>
             </div>
           </div>
@@ -222,10 +321,16 @@
               <div class=pic><img alt="" class=img-fluid src=assets/img/team/placeholder.webp> </div>
               <div class=member-info><br>
                 <h4>Keerthana Priya B</h4><span>Joint secretary</span>
-                <div class=social><a href=mailto:priyakeerthana21@gmail.com><i class="bi bi-envelope"></i></a> <a
-                    href= https://www.linkedin.com/in/keerthana-priya-b-75499b1b3> <i class=ri-linkedin-box-fill></i></a>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:priyakeerthana21@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:priyakeerthana21@gmail.com">priyakeerthana21@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="https://www.linkedin.com/in/keerthana-priya-b-75499b1b3"> <i class=ri-linkedin-box-fill></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="https://www.linkedin.com/in/keerthana-priya-b-75499b1b3">Keerthana Priya B</a>
+                  </div>
                 </div>
-                <p class="quote">"Be a blessing"</p>
               </div>
             </div>
           </div>
@@ -235,10 +340,16 @@
               <div class=pic><img alt="" class=img-fluid src=assets/img/team/krupa.webp> </div>
               <div class=member-info><br>
                 <h4>Krupa Nandhini B</h4><span>Student Coordinator</span>
-                <div class=social><a href=mailto:krupanandhini3@gmail.com><i class="bi bi-envelope"></i></a> <a
-                    href=https://www.linkedin.com/in/krupa-nandhini-b719991b3> <i class=ri-linkedin-box-fill></i></a>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:krupanandhini3@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:krupanandhini3@gmail.com">krupanandhini3@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="https://www.linkedin.com/in/krupa-nandhini-b719991b3"> <i class=ri-linkedin-box-fill></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="https://www.linkedin.com/in/krupa-nandhini-b719991b3">Krupa Nandhini</a>
+                  </div>
                 </div>
-                <p class="quote">"Nothing can inspire you more than your dreams"</p>
               </div>
             </div>
           </div>
@@ -248,10 +359,16 @@
               <div class=pic><img alt="" class=img-fluid src=assets/img/team/rakesh.webp> </div>
               <div class=member-info><br>
                 <h4>Rakesh Srinivasan</h4><span>Student Coordinator</span>
-                <div class=social><a href=mailto:rakesh.nkdr@gmail.com><i class="bi bi-envelope"></i></a> <a
-                    href=https://www.linkedin.com/in/rakesh-srinivasan-a78a7a1b3> <i class=ri-linkedin-box-fill></i></a>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:rakesh.nkdr@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:rakesh.nkdr@gmail.com">rakesh.nkdr@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="https://www.linkedin.com/in/rakesh-srinivasan-a78a7a1b3"> <i class=ri-linkedin-box-fill></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="https://www.linkedin.com/in/rakesh-srinivasan-a78a7a1b3">Rakesh Srinivasan</a>
+                  </div>
                 </div>
-                <p class="quote">"Be a viking until achieving something great"</p>
               </div>
             </div>
           </div>
@@ -261,10 +378,16 @@
               <div class=pic><img alt="" class=img-fluid src=assets/img/team/rishitha.webp> </div>
               <div class=member-info><br>
                 <h4>Rishitha SP</h4><span>Creative head</span>
-                <div class=social><a href=mailto:sprishitha@gmail.com><i class="bi bi-envelope"></i></a> <a
-                    href=https://www.linkedin.com/in/rishitha-sp-1a201b16b> <i class=ri-linkedin-box-fill></i></a>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:sprishitha@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:sprishitha@gmail.com">sprishitha@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="https://www.linkedin.com/in/rishitha-sp-1a201b16b"> <i class=ri-linkedin-box-fill></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="https://www.linkedin.com/in/rishitha-sp-1a201b16b">RISHITHA SP</a>
+                  </div>
                 </div>
-                <p class="quote">"Seize the moment"</p>
               </div>
             </div>
           </div>
@@ -274,10 +397,16 @@
               <div class=pic><img alt="" class=img-fluid src=assets/img/team/snigdha.webp> </div>
               <div class=member-info><br>
                 <h4>Snigdha Anjali</h4><span>Treasurer</span>
-                <div class=social><a href="mailto:snigdha.anjali18@gmail.com"><i class="bi bi-envelope"></i></a> <a
-                    href="https://www.linkedin.com/in/snigdha-anjali"> <i
-                      class=ri-linkedin-box-fill></i></a></div>
-                <p class="quote">“And I knew exactly what to do. But in a much more real sense, I had no idea what to do” </p>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:snigdha.anjali18@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:snigdha.anjali18@gmail.com">snigdha.anjali18@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="https://www.linkedin.com/in/snigdha-anjali"> <i class=ri-linkedin-box-fill></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="https://www.linkedin.com/in/snigdha-anjali">Snigdha Anjali</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -286,11 +415,17 @@
             <div class="d-flex align-items-start member" data-aos=zoom-in data-aos-delay=100>
               <div class=pic><img alt="" class=img-fluid src=assets/img/team/placeholder.webp> </div>
               <div class=member-info><br>
-                <h4>Name</h4><span>Faculty</span>
-                <div class=social><a href="mailto:"><i class="bi bi-envelope"></i></a> <a
-                    href=""> <i
-                      class=ri-linkedin-box-fill></i></a></div>
-                <!-- <p class="quote">“And I knew exactly what to do. But in a much more real sense, I had no idea what to do” </p> -->
+                <h4>Mrs. Ramya</h4><span>Faculty coordinator</span>
+                <div class=social-outer>
+                  <div class="social-inner">
+                    <a href="mailto:ramya.devasahayam@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a style="display: block; background: none; color: #444444; margin-left: 5px; width: fit-content; font-size: 14px;" href="mailto:ramya.devasahayam@gmail.com">ramya.devasahayam@gmail.com</a>
+                  </div>
+                  <div class="social-inner">
+                    <a href="#"> <i class=ri-phone-fill></i></a>
+                    <p>+91 12345 67890</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
