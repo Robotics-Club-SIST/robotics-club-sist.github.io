@@ -24,6 +24,54 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Jost", sans-serif;
 }
 
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  right: 0%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 100000;
+}
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+/* .icon-bar #mail img {
+  width: 20px;
+}
+.icon-bar #discord img {
+  width: 20px;
+}
+.icon-bar #instagram img {
+  width: 20px;
+}
+.icon-bar #linkedin img {
+  width: 20px;
+} */
+.icon-bar #mail {
+  background-color: #db4437;
+}
+.icon-bar #discord {
+  background-color: #5865f2;
+}
+.icon-bar #instagram {
+  background-color: #ed4956;
+}
+.icon-bar #linkedin {
+  background-color: #0A66C2;
+}
+/* .icon-bar a:hover {
+} */
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -403,7 +451,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 20px;
   width: 40px;
   height: 40px;
   /* border-radius: 50%; */
@@ -416,9 +464,10 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
   color: white;
-  border: 1px solid white;
+  border: 1px solid #426fe9;
   border-radius: 50%;
   transition: 0.3s;
+  box-shadow: 0px 0px 10px 1px #ffffff;
 }
 #hero .hero-socials a i:hover {
   /* background-color: white; */
@@ -824,10 +873,13 @@ section {
 .team .member .pic {
   overflow: hidden;
   width: 180px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  /* border: 1px solid red; */
 }
 .team .member .pic img {
   transition: ease-in-out 0.3s;
+  border-radius: 50%;
+
 }
 .team .member:hover {
   transform: translateY(-10px);
@@ -862,13 +914,14 @@ section {
   margin: 10px 0 0 0;
   font-size: 14px;
 }
-.team .member .social {
+.team .member .social-outer {
   margin-top: 12px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-direction: column;
 }
-.team .member .social a {
+.team .member .social-outer a {
   transition: ease-in-out 0.3s;
   display: flex;
   align-items: center;
@@ -878,25 +931,76 @@ section {
   height: 32px;
   background: #eff2f8;
 }
-.team .member .social a i {
+.team .member .social-outer a i {
   color: #37517e;
   font-size: 16px;
   margin: 0 2px;
 }
-.team .member .social a:hover {
+.team .member .social-outer a:hover {
   background: #47b2e4;
 }
-.team .member .social a:hover i {
+.team .member .social-outer a:hover i {
   color: #fff;
 }
-.team .member .social a + a {
-  margin-left: 8px;
-}
-.team .quote {
-  font-style: italic;
-  color: #36517e;
+.team .member .social-outer a + a {
+  margin-top: 8px;
 }
 
+.team .member .social-inner {
+  /* color: red; */
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 5px;
+}
+
+.team .member .social-inner p {
+  text-align: center;
+  margin: 0 0 0 5px;
+}
+/* 
+.team .member .social-inner .link-letter {
+  text-decoration: none;
+  color: red !important;
+  display: block;
+  border: 1px solid red;
+} */
+
+/* .team .quote {
+  font-style: italic;
+  color: #36517e;
+} */
+@media (min-width:319px) and (max-width:767px){
+  .team .member {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .team .member .member-info {
+    padding: 0 0 10px 10px;
+    width: 100%;
+  }
+  .team .member .member-info .social-outer {
+    margin: 0;
+  }
+  .team .member .member-info h4, .team .member .member-info span {
+    text-align: center;
+    padding: 0px;
+  }
+  .team .member .member-info span::after {
+    display: none;
+  }
+  .team .member .pic {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .team .member .pic img {
+    width: 50%;
+  }
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -1111,7 +1215,7 @@ section {
   background: #37517e;
 }
 #footer .footer-newsletter {
-  padding: 20px 0;
+  padding: 40px 0;
   background: #fff;
   text-align: center;
   font-size: 15px;
@@ -1138,6 +1242,10 @@ section {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
+}
+#footer #contactbutton:hover {
+  color: white;
+  background-color: #209dd8;
 }
 #footer .footer-newsletter form input[type=submit] {
   position: absolute;
@@ -1247,18 +1355,18 @@ section {
   text-decoration: none;
 }
 #footer .footer-bottom {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: #fff;
 }
 #footer .copyright {
   float: left;
-  font-size: 10px;
+  font-size: 12px;
 
 }
 #footer .credits {
   float: right;
-  font-size: 10px;
+  font-size: 12px;
 }
 #footer .credits a {
   transition: 0.3s;
